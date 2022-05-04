@@ -1,6 +1,8 @@
-// Import stylesheets
-import './style.css';
+function findFactorial(num) {
+  if (num === 0) {
+    return 1;
+  }
+  return num * findFactorial(num - 1);
+}
 
-// Write Javascript code!
-const appDiv = document.getElementById('app');
-appDiv.innerHTML = `<h1>JS Starter</h1>`;
+console.log(findFactorial(5));
